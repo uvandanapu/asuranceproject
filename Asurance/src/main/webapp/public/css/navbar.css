@@ -1,0 +1,55 @@
+#headerTitle{
+font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", Charcoal, "Helvetica Inserat", "Bitstream Vera Sans Bold", "Arial Black", sans serif;
+margin-left: 472px;
+margin-top: 20px;
+color: #e01e1e;
+font-size: x-large;
+}
+#navbar{
+min-height: 86px;
+background-image: linear-gradient(to bottom,#fff 0,#19dc74 100%);
+}
+#breadcrumb {
+padding: 8px 160px;
+margin-bottom: 0px;
+list-style: none;
+background-color: #4c4848;
+border-radius: 4px;
+}
+#breadcrumb li a:focus, a:hover  {
+color: #f1071b;
+text-decoration: none;
+}
+#breadcrumb li {
+font-size: 44px;
+}
+#heading{
+	color: red;
+}
+
+
+  #tabs{
+   	margin-top: -23;
+   	} 
+ 
+
+
+input[type=text], input[type=password], input[type=date], select {
+	border-radius: 4px;
+	border: solid 3px #cbc9c9;
+	background-color: #fcf8e3;
+}
+
+.glyphicon {
+	color: red;
+}
+.glyphicon-user, .glyphicon-home {
+	margin-right: 12px;
+}
+
+/*#state.ng-invalid.ng-touched , input.ng-invalid.ng-touched {
+    border-color:red;
+}
+#state.ng-valid, input.ng-valid {
+    border-color:green;
+}*/
