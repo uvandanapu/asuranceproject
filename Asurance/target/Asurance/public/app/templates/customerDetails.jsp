@@ -28,7 +28,10 @@
 <div class="jumbotron">
   <div class="container text-center">
     <h1>My Portfolio</h1>
-    <p>Some text that represents "Me"...</p>
+    <h3>
+			<label>First Name:</label> <label><b>${customer.getFirstName()}</b></label><br>
+			<label>Last Name:</label> <label><b>${customer.getLastName()}</b></label><br>
+</h3>
   </div>
 </div>
   

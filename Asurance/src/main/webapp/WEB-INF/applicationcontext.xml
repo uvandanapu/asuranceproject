@@ -13,5 +13,9 @@
 		class="com.ekthasol.asurance.service.registration.RegistrationService"></bean>
 	<bean id="registrationDAO"
 		class="com.ekthasol.asurance.dao.registration.RegistrationDAO"></bean>
+	<bean id="loginService"
+		class="com.ekthasol.asurance.service.login.LoginService"></bean>
+	<bean id="loginDAO"
+		class="com.ekthasol.asurance.dao.login.LoginDAO"></bean>
 		
 	</beans>

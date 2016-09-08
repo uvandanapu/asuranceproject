@@ -1,7 +1,7 @@
 angular.module("components")
     .directive("startPage", [function () {
         return {
-            templateUrl: "app/templates/start.html",
+            templateUrl: "public/app/templates/start.jsp",
             restrict: "A,E,C"
         };
       

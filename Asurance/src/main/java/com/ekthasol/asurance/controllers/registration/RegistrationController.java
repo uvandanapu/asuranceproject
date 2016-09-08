@@ -17,8 +17,8 @@ public class RegistrationController {
 	@Autowired
 	RegistrationService registrationService;
 
-	@RequestMapping(value = "/saveCustomer", method = RequestMethod.POST)
-	public ModelAndView handleRequest(@ModelAttribute Customer customer, @ModelAttribute Address address) {
+	@RequestMapping(value="/saveCustomer", method=RequestMethod.POST)
+	public ModelAndView saveCustomer(@ModelAttribute Customer customer, @ModelAttribute Address address) {
 
 		boolean status = registrationService.saveCustomer(customer, address);
 

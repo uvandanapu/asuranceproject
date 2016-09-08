@@ -20,4 +20,8 @@
 		<servlet-name>dispatcher</servlet-name>
 		<url-pattern>/saveCustomer</url-pattern>
 	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>dispatcher</servlet-name>
+		<url-pattern>/getCustomer</url-pattern>
+	</servlet-mapping>
 </web-app>

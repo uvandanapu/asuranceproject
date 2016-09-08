@@ -38,8 +38,8 @@ public class Customer {
 	private String firstName;
 	@Column(name = "LAST_NAME")
 	private String lastName;
-	@Column(name = "DATE_OF_BIRTH")
-	private Date dateOfBirth;
+	/*@Column(name = "DATE_OF_BIRTH")
+	private Date dateOfBirth;*/
 	@Column(name = "POLICY_NUMBER")
 	private String policyNumber;
 	@Column(name = "EMAIL")
@@ -91,14 +91,6 @@ public class Customer {
 		this.email = email;
 	}
 
-	public String getConfirmEmail() {
-		return confirmEmail;
-	}
-
-	public void setConfirmEmail(String confirmEmail) {
-		this.confirmEmail = confirmEmail;
-	}
-
 	public String getFirstName() {
 		return firstName;
 	}
@@ -115,11 +107,11 @@ public class Customer {
 		this.lastName = lastName;
 	}
 
-	public Date getDateOfBirth() {
+	/*public Date getDateOfBirth() {
 		return dateOfBirth;
 	}
 
 	public void setDateOfBirth(Date dateOfBirth) {
 		this.dateOfBirth = dateOfBirth;
-	}
+	}*/
 }

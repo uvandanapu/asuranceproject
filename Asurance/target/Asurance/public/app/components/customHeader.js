@@ -1,7 +1,7 @@
 angular.module("components")
     .directive("customHeader", [function () {
         return {
-            templateUrl: "app/templates/navbar.html",
+            templateUrl: "public/app/templates/navbar.jsp",
             restrict: "A,E,C"
         };
 }]);

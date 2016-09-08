@@ -2,14 +2,14 @@
     "use strict";
     angular.module("autoInsurance")
         .controller("mainCtrl", ["$scope", "$rootScope", function ($scope, $rootScope) {
-            var baseUrl = "app/templates/";
+            var baseUrl = "public/app/templates/";
             $scope.templates = {
-                navbarUrl: baseUrl + "navbar.html",
-                footerUrl: baseUrl + "footer.html",
-                registerUrl: baseUrl + "register.html",
-                loginUrl: baseUrl + "login.html",
-                tabsUrl: baseUrl + "tabs.html",
-                policyUrl: baseUrl + "policyNumber.html"
+                navbarUrl: baseUrl + "navbar.jsp",
+                footerUrl: baseUrl + "footer.jsp",
+                registerUrl: baseUrl + "register.jsp",
+                loginUrl: baseUrl + "login.jsp",
+                tabsUrl: baseUrl + "tabs.jsp",
+                policyUrl: baseUrl + "policyNumber.jsp"
             };
 
         
