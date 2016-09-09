@@ -22,7 +22,7 @@ public class LoginController {
 			Customer cust = loginService.getCustomer(customer.getEmail(), customer.getPassword());
 			
 			if(cust != null)
-				return new ModelAndView("customerDetails","customer",cust);
+				return new ModelAndView("success","customer",cust);
 			else
 				return new ModelAndView("failure");
 	}

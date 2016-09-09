@@ -1,5 +1,5 @@
 angular.module("components")
-.controller('startPageCtrl', function($scope) {
+.controller('startPageCtrl', function($scope, $http) {
 $scope.showDriver = false;
 $scope.showStart = true;
 $scope.showVehicle = false;
@@ -27,6 +27,7 @@ $scope.register = function(model){
 	$scope.registerPage.isPasswordMatch = false;
 	if($scope.registerPage.$valid && model.password == model.passwordConfirmation){
 		$scope.registerPage.isPasswordMatch = true;
+		
 		console.log(model);
 	}
 	

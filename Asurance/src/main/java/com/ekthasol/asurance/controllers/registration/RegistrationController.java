@@ -23,7 +23,7 @@ public class RegistrationController {
 		boolean status = registrationService.saveCustomer(customer, address);
 
 		if (status)
-			return new ModelAndView("success");
+			return new ModelAndView("success","customer",customer);
 		else
 			return new ModelAndView("failure");
 	}
