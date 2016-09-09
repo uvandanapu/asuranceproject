@@ -13,13 +13,14 @@ public class LoginDAO {
 	@Autowired
 	SessionFactory sessionFactory;
 	
-	public Customer getCustomer(String username,String password){
+	public Customer getCustomer(String email,String password){
 		Session session = sessionFactory.openSession();
 		Customer customer = null;
 		
 		try {
-			Query query = session.createQuery("from Customer where EMAIL= :username");
-			query.setParameter("username", username);
+			Query query = session.createQuery("from Customer where EMAIL= :email and PASSWORD= :password");
+			query.setParameter("email", email);
+			query.setParameter("password", password);
 			customer = (Customer) query.list().get(0);
 		} catch (HibernateException e) {
 			e.printStackTrace();

@@ -8,7 +8,7 @@
 					<h2>Welcome!</h2>
 					<hr class="colorgraph">
 					<div class="form-group">
-						<input type="email" name="email" id="Email" class="form-control input-lg" placeholder="User ID">
+						<input type="email" name="email" id="Email" class="form-control input-lg" placeholder="Email">
 					</div>
 					<div class="form-group">
 						<input type="password" name="password" id="Password" class="form-control input-lg" placeholder="Password">
@@ -24,7 +24,7 @@
 							<input type="submit" class="btn btn-lg btn-success btn-block" value="Submit">
 						</div>
 						<div class="col-xs-6 col-sm-6 col-md-6">
-							<a  href="#" class="btn btn-lg btn-primary btn-block" data-dismiss="modal" data-toggle="modal" data-target="#policyModal">Register</a>
+							<a  href="#" class="btn btn-lg btn-primary btn-block" data-dismiss="modal" data-toggle="modal" data-target="#registerModal">Register</a>
 						</div>
 					</div>
 				</fieldset>

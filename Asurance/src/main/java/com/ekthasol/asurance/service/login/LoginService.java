@@ -10,9 +10,9 @@ public class LoginService {
 	@Autowired
 	LoginDAO loginDAO;
 	
-	public Customer getCustomer(String username,String password){
+	public Customer getCustomer(String email,String password){
 		
-		Customer customer = loginDAO.getCustomer(username, password);
+		Customer customer = loginDAO.getCustomer(email, password);
 		
 		return customer;
 	}
