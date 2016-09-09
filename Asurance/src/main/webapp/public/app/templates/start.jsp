@@ -1,4 +1,4 @@
-<div class="container">
+<div class="container" style="margin-top: 110px">
   <h2 id="heading">Let's Start</h2>
   <form name="startPage" ng-controller="startPageCtrl" novalidate>
     <div class=" form-group row ">

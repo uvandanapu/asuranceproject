@@ -1,5 +1,5 @@
 
-<nav class="navbar navbar-default" id="navbar">
+<nav class="navbar navbar-default navbar-fixed-top navbar-collapse" id="navbar">
   <div class="container-fluid">
     <ul class="nav navbar-nav">
       <li id="headerTitle">Assurance Insurance</li>
