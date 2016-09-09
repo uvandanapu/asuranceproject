@@ -1,7 +1,5 @@
 package com.ekthasol.asurance.models;
 
-import java.util.Date;
-
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -38,26 +36,16 @@ public class Customer {
 	private String firstName;
 	@Column(name = "LAST_NAME")
 	private String lastName;
-	/*@Column(name = "DATE_OF_BIRTH")
-	private Date dateOfBirth;*/
+	@Column(name = "DATE_OF_BIRTH")
+	private String dateOfBirth;
 	@Column(name = "POLICY_NUMBER")
 	private String policyNumber;
 	@Column(name = "EMAIL")
 	private String email;
 	@Column(name = "ADDRESS_ID")
 	private int addressID;
-	@Column(name = "USERNAME")
-	private String username;
 	@Column(name = "PASSWORD")
 	private String password;
-
-	public String getUsername() {
-		return username;
-	}
-
-	public void setUsername(String username) {
-		this.username = username;
-	}
 
 	public String getPassword() {
 		return password;
@@ -106,12 +94,13 @@ public class Customer {
 	public void setLastName(String lastName) {
 		this.lastName = lastName;
 	}
-
-	/*public Date getDateOfBirth() {
+	
+	public String getDateOfBirth() {
 		return dateOfBirth;
 	}
 
-	public void setDateOfBirth(Date dateOfBirth) {
+	public void setDateOfBirth(String dateOfBirth) {
 		this.dateOfBirth = dateOfBirth;
-	}*/
+	}
+
 }
