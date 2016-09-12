@@ -1,6 +1,11 @@
 <div class="container" style="background-color:#f2f2f2;margin-top:30px;">
+
+
+<div custom-logo></div>
 	<div class="row">
 		<div class="col-xs-12 col-sm-8 col-md-6 col-sm-offset-2 col-md-offset-3">
+		
+		
 			<form role="form" name="registerPage" ng-controller="startPageCtrl" ng-click="register(model)"  novalidate action="saveCustomer" method="post" >
 				<h2 class="btn btn-danger btn-block" style="font-size:25px"><b>REGISTER HERE</b><small></small></h2>
 				<hr class="colorgraph">
@@ -9,6 +14,9 @@
 					<span class="text-error" ng-show="registerPage.submitted && registerPage.policyNumber.$invalid" ng-style="errorField">Policy Number is Required</span>
 				</div> -->
 				<div class="row">
+				      
+				       
+				
 					<div class="col-xs-12 col-sm-6 col-md-6">
 						
 						<div class="form-group">
@@ -46,13 +54,16 @@
 					<span class="text-error" ng-show="registerPage.submitted && registerPage.city.$invalid" ng-style="errorField">City is Required</span>
 				</div>
 				
+				<div class="form-group">
+					<input type="text" name="zipCode" ng-model="model.zipCode" id="zip" class="form-control input-lg" placeholder="zip" tabindex="3" required>
+					<span class="text-error" ng-show="registerPage.submitted && registerPage.zip.$invalid" ng-style="errorField">Zip is Required</span>
+				</div>
 				<div class="form-group" ng-controller="stateController">
-					<select class="form-control input-lg" name="state" ng-model="model.state"  id="stateID" ng-model="model.address3" name="address3"  ng-model = "selectedState" ng-options = "state.name for state in addState"  required>
+					<select class="form-control input-lg" name="state" ng-model="model.state"  id="stateID"   ng-model = "selectedState" ng-options = "state.name for state in addState"  ng-init="selectedState = options[0].name"  required>
 						<option value="">Select State</option>
 					</select>
 					<span class="text-error" ng-show="registerPage.submitted && registerPage.state.$invalid" ng-style="errorField">State is Required</span>
 				</div>
-				
 				
 				<div class="form-group">
 					<input type="email" name="email" ng-model="model.email"  id="Email" class="form-control input-lg" placeholder="Email Address" tabindex="4" required>

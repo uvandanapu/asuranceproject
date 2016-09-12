@@ -17,7 +17,8 @@
 
 <body>
     <div class="container-fluid" ng-controller="mainCtrl">
-        <div custom-header></div>
+        <div ng-include="templates.navbarUrl"></div>
+         
        <!--  <div ui-view></div> -->
         <div id="main" ng-include="templates.tabsUrl"></div>
         <div ng-include="templates.footerUrl"></div>
@@ -29,6 +30,7 @@
    <script src="public/app/app.js"></script>
     <!-- <script src= "app/configuration/config.js"></script> -->
     <script src= "public/app/components/customHeader.js"></script>
+     <script src= "public/app/components/customLogo.js"></script>
     <script src= "public/app/components/startPage.js"></script>
     <script src= "public/app/components/driverPage.js"></script>
     <script src= "public/app/components/stateController.js"></script>

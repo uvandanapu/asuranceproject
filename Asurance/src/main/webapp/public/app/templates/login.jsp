@@ -1,8 +1,10 @@
 
 <div style="color:#f90606;background-color:#f2f2f2; margin-top:100px; height:500px;"class="container" >
 	
+	<div custom-logo></div>
 	<div class="row" style="margin-top:20px">
 		<div class="col-xs-12 col-sm-8 col-md-6 col-sm-offset-2 col-md-offset-3" >
+		
 			<form role="form" action="getCustomer" method="post">
 				<fieldset>
 					<h2>Welcome!</h2>

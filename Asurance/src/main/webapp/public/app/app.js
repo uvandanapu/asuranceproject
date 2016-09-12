@@ -10,6 +10,7 @@
                 loginUrl: baseUrl + "login.jsp",
                 tabsUrl: baseUrl + "tabs.jsp",
                 policyUrl: baseUrl + "policyNumber.jsp"
+                
             };
 
         

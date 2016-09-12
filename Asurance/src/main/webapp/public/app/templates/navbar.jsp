@@ -2,12 +2,18 @@
 <nav class="navbar navbar-default navbar-fixed-top navbar-collapse" id="navbar">
   <div class="container-fluid">
     <ul class="nav navbar-nav">
+ <li> <div custom-logo></div></li>
+  
       <li id="headerTitle">Assurance Insurance</li>
+      
     </ul>
      <ul class="nav navbar-nav navbar-right">
       <li data-toggle="modal" data-target="#registerModal"><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
       <li data-toggle="modal" data-target="#loginModal"><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
       <li ><a href="#"><span class="glyphicon glyphicon-edit"></span> Get Quote</a></li>
+    </ul>
+    <ul class="navbar-brand">
+    
     </ul>
   </div>
 </nav>
@@ -83,5 +89,5 @@
     </div>
   </div>
   
-</div>
 
+</div>
